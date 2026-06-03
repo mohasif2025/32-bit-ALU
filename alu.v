@@ -21,8 +21,8 @@
 
 
 module alu16 (
-    input  [15:0] A,
-    input  [15:0] B,
+    input  [31:0] A,
+    input  [31:0] B,
     input  [1:0] SEL,
 
     output reg [15:0] RESULT
