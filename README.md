@@ -1,6 +1,6 @@
-# 16-bit FPGA ALU Design
+# 32-bit FPGA ALU Design
 
-A 16-bit Arithmetic Logic Unit (ALU) designed in Verilog and simulated using AMD Vivado. This project was created to explore fundamental computer architecture and digital logic concepts including datapaths, buses, multiplexers, combinational logic, and RTL design.
+A 32-bit Arithmetic Logic Unit (ALU) designed in Verilog and simulated using AMD Vivado. This project was created to explore fundamental computer architecture and digital logic concepts including datapaths, buses, multiplexers, combinational logic, and RTL design.
 
 ---
 
@@ -13,7 +13,7 @@ The ALU supports the following operations:
 | `00`                 | Bitwise AND     |
 | `01`                 | Bitwise OR      |
 | `10`                 | Bitwise XOR     |
-| `11`                 | 16-bit Addition |
+| `11`                 | 32-bit Addition |
 
 ---
 
@@ -41,8 +41,8 @@ The select signal (`SEL`) controls which operation is routed to the output throu
 
 ```verilog
 module alu16 (
-    input  [15:0] A,
-    input  [15:0] B,
+    input  [31:0] A,
+    input  [31:0] B,
     input  [1:0] SEL,
 
     output reg [15:0] RESULT
