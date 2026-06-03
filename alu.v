@@ -25,7 +25,7 @@ module alu16 (
     input  [31:0] B,
     input  [1:0] SEL,
 
-    output reg [15:0] RESULT
+    output reg [32:0] RESULT
 );
 
 always @(*) begin
